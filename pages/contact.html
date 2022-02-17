@@ -29,5 +29,23 @@
             <ul>
         </nav>
     </header>
+    <!--Creation of the contact form-->
+    <form method="post" action="fichier.php">
+
+        <label for="text">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="votre nom ici" required>
+
+        <label for="mail">Mail</label>
+        <input type="mail" id="mail" name="mail" placeholder="adresse@mail.xxx" required>
+
+        <label for="sujet">Sujet</label>
+        <input type="text" id="sujet" name="sujet" placeholder="sujet" required>
+
+        <label for="comments">Commentaire</label>
+        <textarea type="text" id="comments" name="commentaires" rows="10" cols="30" placeholder="vos remarques" required></textarea>
+        <!--How to insert a random code to validate this not a bot -->
+        <input type="text" id="validate" name="valider" placeholder="entrez code de vérification" required> 
+        <button type="submit">Envoyez votre message</button>  
+    </form>
 </body>
 </html>
