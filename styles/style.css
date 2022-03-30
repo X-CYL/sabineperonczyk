@@ -1,3 +1,46 @@
-h1{
-    color: blue;
+body{
+    background-color: rgb(46,75,95);
+    font-family: "./fonts/Barlow_Semi_Condensed,Playfair_Display/Barlow_Semi_Condensed/BarlowSemiCondensed-Black.ttf";
+    font-size: 1.3em;
+    color:rgb(250, 235, 215)
 }
+.colorWhite, footer, .nav-link{
+    color:white;
+    margin-left: 1%;
+
+}
+footer, h2{
+    text-align: center;
+}
+h1{
+    margin-top: 4%;
+    margin-left: 1%;
+}
+h2{
+    margin-top: 2%;
+}
+.text-start{
+    margin-left: 1%;
+    margin-top: 4%;
+    text-indent: 2%;
+}
+.colorNav{
+    background: rgb(87, 127, 156);
+}
+.img-responsive{
+    margin-top: 3%;
+}
+.footer-margin{
+    margin-top: 10%;
+}
+.nav-item:hover{
+    background: black;
+    color:white;
+}
+.nav-link:hover{
+    color:white;
+}
+.paragraf-top-margin{
+    margin-top: -1%;
+}
+
