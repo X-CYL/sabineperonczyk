@@ -27,20 +27,23 @@ h2{
 .colorNav{
     background: rgb(87, 127, 156);
 }
-.img-responsive{
-    margin-top: 3%;
+.form-control, .btn{
+    background: rgb(46,75,95);
+    width:80%;
+    color:rgb(212, 206, 164);
+    border-radius: 1px;
+    border-color:rgb(212, 206, 164) ;
 }
-.footer-margin{
-    margin-top: 10%;
+.align-items-start{
+    margin-top: -200px;
 }
-.nav-item:hover{
-    background: black;
-    color:white;
+.text-left{
+    padding-right: 3%;
+    margin-top: 2%;
 }
-.nav-link:hover{
-    color:white;
+.text-center{
+    margin-top: 2%;
 }
-.paragraf-top-margin{
-    margin-top: -1%;
+.btn{
+    margin-top: 4px;
 }
-

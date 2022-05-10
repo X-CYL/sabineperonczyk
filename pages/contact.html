@@ -4,48 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./styles/style.css" rel="stylesheet"/>
+    <link href="../tools/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/styleContact.css" rel="stylesheet"/>
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <h1>sabineperonczyk.com</h1>
-            <p>Artiste Photographe amateur</p>
-        <nav>
-            <ul>
-                <li>Acceuil</li>
-                <li>Photographies</li>
-                    <ul>
-                        <li>nature</li>
-                        <li>urbain</li>
-                    </ul>
-                <li>Photographismes</li>
-                    <ul>
-                        <li>Figuratif</li>
-                        <li>Abstrait</li>
-                    </ul>
-                <li>Bio</li>
-                <li>Contact</li>
-            <ul>
-        </nav>
+        <h1 class="colorWhite">sabineperonczyk.com</h1>
+            <p class="colorWhite">Artiste Photographe amateur</p>
+                <div class="container-fluid">
+                    <nav class="colorNav">
+                        <ul class="nav">
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link" href="../../sabineperonczyk/index.html"> ACCUEIL</a>
+                            </li>
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link" href="../../pages/pilot_pages/bio.html">BIO</a>
+                            </li>
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link disabled" href="#">PHOTOGRAPHIES</a>
+                            </li>
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link disabled" href="#">NATURE</a>
+                            </li>
+                            <li class="nav-itembtn-sm">
+                                <a class="nav-link disabled" href="#">URBAIN</a>
+                            </li>
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link disabled" href="#">PHOTOGRAPHISMES</a>
+                            </li>         
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link disabled" href="#">FIGURATIF</a>
+                                </li>
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link disabled" href="#">ABSTRAIT</a>
+                            </li>
+                            <li class="nav-item btn-sm">
+                                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
+                            </li>
+                            <li class="nav-items btn-sm">
+                                <a class="nav-link" href="#">EVENEMENTS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
     </header>
     <!--Creation of the contact form-->
-    <form method="post" action="fichier.php">
-
-        <label for="text">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="votre nom ici" required>
-
-        <label for="mail">Mail</label>
-        <input type="mail" id="mail" name="mail" placeholder="adresse@mail.xxx" required>
-
-        <label for="sujet">Sujet</label>
-        <input type="text" id="sujet" name="sujet" placeholder="sujet" required>
-
-        <label for="comments">Commentaire</label>
-        <textarea type="text" id="comments" name="commentaires" rows="10" cols="30" placeholder="vos remarques" required></textarea>
-        <!--How to insert a random code to validate this not a bot -->
-        <input type="text" id="validate" name="valider" placeholder="entrez code de vérification" required> 
-        <button type="submit">Envoyez votre message</button>  
+    <div class="row justify-content-end">
+        <div class="col-6">
+        <p class="text-center">Sabine PERONCZYK</p>
+        <p class="text-left">France</p>
+        <p class="text-left">Merci d'avoir visité mes pages, vous pouvez m'envoyer vos commentaires. A bientôt</p>
+        <p class="text-left">contact@sabineperonczyk.com</p>
+        </div>
+    </div>   
+    <div class="row align-items-start">
+        <div class="col-6">  
+    <form class="container-fluid" method="post" action="">
+            <div class="form-group">
+                <label for="text">Nom</label>
+                <input class="form-control" type="text" id="nom" name="nom" placeholder="votre nom ici" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">Mail</label>
+                <input class="form-control" type="mail" id="mail" name="mail" placeholder="adresse@mail.xxx" required>
+            </div>
+            <div class="form-group">
+                <label for="sujet">Sujet</label>
+                <input class="form-control" type="text" id="sujet" name="sujet" placeholder="sujet" required>
+            </div>
+            <div class="form-group">
+                <label for="comments">Commentaire</label>
+                <textarea class="form-control" type="text" id="comments" name="commentaires" rows="7" cols="30" placeholder="vos remarques" required></textarea>
+            </div>
+            <div class="form-group">
+                <!-- how to insert a random code to valide form-->
+                <input class="form-control" type="text" id="validate" name="valider" placeholder="entrez code de vérification" required> 
+                
+                <button class="btn" type="submit">envoyer votre message</button>  
+                <button class="btn" type="reset">Effacer les champs</button>
+            </div>
+        </div>
     </form>
 </body>
 </html>
