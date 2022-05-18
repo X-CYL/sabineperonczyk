@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../tools/bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/styleContact.css" rel="stylesheet"/>
+    <link href="../styles/styleContact.css" rel="stylesheet">
+    <script src="../tools/bootstrap.bundle.min.js" defer></script>
     <script src="../scriptJS/contact.js" defer></script>
     <title>Contact</title>
 </head>
@@ -20,7 +21,7 @@
                                 <a class="nav-link" href="../../sabineperonczyk/index.html"> ACCUEIL</a>
                             </li>
                             <li class="nav-item btn-sm">
-                                <a class="nav-link" href="../pages/pilot_pages/bio.html">BIO</a>
+                                <a class="nav-link" href="../../sabineperonczyk/pages/pilot_pages/bio.html">BIO</a>
                             </li>
                             <li class="nav-item btn-sm">
                                 <a class="nav-link disabled" href="#">PHOTOGRAPHIES</a>
@@ -41,7 +42,7 @@
                                 <a class="nav-link disabled" href="#">ABSTRAIT</a>
                             </li>
                             <li class="nav-item btn-sm">
-                                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
+                                <a class="nav-link" href="../../sabineperonczyk/pages/contact.html">CONTACT</a>
                             </li>
                             <li class="nav-item btn-sm">
                                 <a class="nav-link" href="#">EVENEMENTS</a>
@@ -65,7 +66,7 @@
                 <form method ="post" action="">
                         <div class="form-group">
                             <label for="text">Nom</label>
-                            <input class="form-control" type="text" id="nom" name="nom" placeholder="votre nom ici" required>
+                            <input class="form-control" type="text" id="nom" name="name" placeholder="votre nom ici" required>
                         </div>
                         <div class="form-group">
                             <label for="mail">Mail</label>
@@ -86,15 +87,17 @@
                             <button class="btn" id="subBtn" type="submit" onclick="isEmpty()">envoyer votre message</button>  
                             <button class="btn" id="clearBtn" type="reset">Effacer les champs</button>
                         </div>
-                    </div>
+            </div>
             </form>
-            <div class="alert" id="errorModal">
+            <!-- ancienne modale créée par mes soins-->
+            <!--<div class="alert" id="errorModal">
                 <h4 class="textAlert">!!Alerte!!</h4>
                 <div class="betweenAlert">
                     <p>!! Il faut remplir tout les champs !!</p>
                     <button class="btnAlert" type="button" onclick="annulModalAlert()">Close</button>
                 </div>
-            </div>
-    </div>
+            </div>-->
+            <!--modale créee avec infos online-->
+        </div>
 </body>
 </html>
