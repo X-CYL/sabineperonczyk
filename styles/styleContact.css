@@ -61,3 +61,10 @@ h2 {
 .btn:hover {
   background: rgb(181, 220, 241);
 }
+/* create CSS for modal sheet */
+
+#infos{
+    position:absolute;
+    width: 50%;
+    height: 50%;
+}
