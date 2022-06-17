@@ -9,8 +9,10 @@ body{
     margin-left: 1%;
 }
 .container-fluid{
-    background: rgb(46,75,95);
+    background: rgb(89, 128, 155);
     font-size: 15px;
+    margin-top: -8px;
+    margin-bottom: -8px;
 }
 footer, h2{
     text-align: center;
@@ -40,8 +42,27 @@ h2{
     background: black;
     color:white;
 }
-.nav-link:hover{
-    color:white;
+#textColor{
+    color: white;
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    background: black;
+    color: white;
+}
+.dropdown-menu{
+    background:rgb(89, 128, 155);
+}
+#navbarDropdown{
+    color: white;
+}
+#bioColor{
+    color: white;
+}
+#contactColor{
+    color: white;
 }
 .paragraf-top-margin{
     margin-top: -1%;

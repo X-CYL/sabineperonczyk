@@ -38,7 +38,26 @@ h2 {
   background: black;
   color: white;
 }
-.nav-link:hover {
+#textColor{
+  color: white;
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-item:hover{
+  background: black;
+  color: white;
+}
+.dropdown-menu{
+  background:rgb(89, 128, 155);
+}
+#navbarDropdown{
+  color: white;
+}
+#bioColor{
+  color: white;
+}
+#contactColor{
   color: white;
 }
 .form-control,
