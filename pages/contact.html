@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../tools/bootstrap.min.css" rel="stylesheet"> <!--Version 5.1-->
     <link href="../../styles/styleContact.css" rel="stylesheet">
+    <link href="../styles/styleModal.css" rel="stylesheet">
     <script src="../tools/bootstrap.bundle.min.js" defer></script>
     <script src="../scriptJS/contact.js" defer></script>
     <title>Contact</title>
 </head>
-<body onload="focusOnFirstInput()">
+<body>
   <header>
     <h1 class="colorWhite">sabineperonczyk.com</h1>
         <p class="colorWhite">Artiste Photographe amateur</p>
@@ -66,7 +67,8 @@
         </div>   
         <div class="row align-items-start">
             <div class="col-6">  
-                <form method ="post" action="">
+              <h3 class="formClass">Contact</h3>
+                <form method ="post" action="" class="formClass">
                         <div class="form-group">
                             <label for="text">Nom</label>
                             <input class="form-control" type="text" id="nom" name="name" placeholder="votre nom ici" required>
@@ -93,17 +95,19 @@
             </div>
             </form>
             <!--ancienne modale créée par mes soins-->
-            <!--<div class="alert" id="errorModal">
+            <!--<button type="button" id="openingButton" class="btn btn-primary">modale</button>
+            <div class="modal" id="errorModal">
                 <h4 class="textAlert">!!Alerte!!</h4>
-                <div class="betweenAlert">
-                    <p>!! Il faut remplir tout les champs !!</p>
-                    <button class="btnAlert" type="button" onclick="annulModalAlert()">Close</button>
+                <div class="modalContent">
+                    <span id="textModal">&times;</span>
+                    <p>!! il faut remplir tout les champs</p>
+                    <button class="btnAlert" type="button">Close</button>
                 </div>
             </div>-->
 
             <!--modale créee avec infos online-->
 
-            <button type="button" data-bs-toggle="modal" data-bs-target="#infos" class="btn btn-primary">afficher modal</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#infos" class="btn btn-primary formClass">afficher modale</button>
                 <div class="modal" id="infos">
                     <div class="modal-dialog">
                         <div class="modal-content">

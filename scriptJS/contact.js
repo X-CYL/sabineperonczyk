@@ -2,6 +2,9 @@
 function focusOnFirstInput(){
     document.getElementById('nom').focus();
 }
+//focus sur le premier champ de saisie
+let focusLine = document.getElementsByTagName('body');
+focusLine.addEventListener('load',focusOnFirstInput())
 
 //vérifie que tous les champs sont bien remplis avant le submit
 function isEmpty(){
@@ -10,10 +13,4 @@ let controlInput = document.getElementsByTagName('input');
         if (document.getElementsByTagName(controlInput[i]).value == "");
             modalAlert();
     }
-}
-function modalAlert(){
-    let alert = document.getElementById('infos').style.visibility ="visible";
-}
-function annulModalAlert(){
-    let alert = document.getElementById('infos').style.visibility= "hidden";
 }
