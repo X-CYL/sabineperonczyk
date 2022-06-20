@@ -7,6 +7,8 @@ body {
 .container-fluid{
   background: rgb(87, 127, 156);
   font-size: 15px;
+  margin-top: -8px;
+  margin-bottom: -8px;
 }
 .nav-link {
   color: white;
