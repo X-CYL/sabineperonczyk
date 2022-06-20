@@ -24,16 +24,8 @@ h1{
 h2{
     margin-top: 2%;
 }
-.text-start{
-    margin-left: 1%;
-    margin-top: 4%;
-    text-indent: 2%;
-}
 .img-responsive{
     margin-top: 3%;
-}
-#textColor{
-    color: white;
 }
 .footer-margin{
     margin-top: 10%;
@@ -64,6 +56,6 @@ h2{
 #contactColor{
     color: white;
 }
-.paragraf-top-margin{
-    margin-top: -1%;
+.positionPicture{
+    margin-top: 3%;
 }

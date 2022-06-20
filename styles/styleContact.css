@@ -1,89 +1,96 @@
-body{
-    background-color: rgb(46,75,95);
-    font-family: "./fonts/Barlow_Semi_Condensed,Playfair_Display/Barlow_Semi_Condensed/BarlowSemiCondensed-Black.ttf";
-    font-size: 1.3em;
-    color:rgb(212, 206, 164)
+body {
+  background-color: rgb(46, 75, 95);
+  font-family: "./fonts/Barlow_Semi_Condensed,Playfair_Display/Barlow_Semi_Condensed/BarlowSemiCondensed-Black.ttf";
+  font-size: 1.3em;
+  color: rgb(212, 206, 164);
+}
+.container-fluid{
+  background: rgb(87, 127, 156);
+  font-size: 15px;
+}
+.nav-link {
+  color: white;
+  margin-left: 1%;
+}
+footer, h2 {
+  text-align: center;
+}
+h1 {
+  margin-top: 4%;
+  margin-left: 1%;
+}
+h2 {
+  margin-top: 2%;
+}
+.text-start {
+  margin-left: 1%;
+  margin-top: 4%;
+  text-indent: 2%;
 }
 .colorWhite, footer, .nav-link{
-    color:white;
-    margin-left: 1%;
+  color:rgb(251, 249, 249);
+  margin-left: 1%;
+}
+/*.colorNav {
+  background: rgb(87, 127, 156);
+}*/
+.nav-item:hover {
+  background: black;
+  color: white;
+}
+#textColor{
+  color: white;
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-item:hover{
+  background: black;
+  color: white;
+}
+.dropdown-menu{
+  background:rgb(89, 128, 155);
+}
+#navbarDropdown{
+  color: white;
+}
+#bioColor{
+  color: white;
+}
+#contactColor{
+  color: white;
+}
+.form-control,
+.btn {
+  background: rgb(46, 75, 95);
+  width: 80%;
+  color: rgb(212, 206, 164);
+  border-radius: 1px;
+  border-color: rgb(212, 206, 164);
+}
+.align-items-start {
+  margin-top: -200px;
+}
+.text-left {
+  padding-right: 3%;
+  margin-top: 2%;
+}
+.text-center {
+  margin-top: 2%;
+}
+.btn {
+  margin-top: 4px;
+}
+.btn:hover {
+  background: rgb(181, 220, 241);
+}
+/* create CSS for modal sheet */
 
+#infos{
+    position:absolute;
+    width: 50%;
+    height: 50%;
 }
-footer, h2{
-    text-align: center;
-}
-h1{
-    margin-top: 4%;
-    margin-left: 1%;
-}
-h2{
-    margin-top: 2%;
-}
-.text-start{
-    margin-left: 1%;
-    margin-top: 4%;
-    text-indent: 2%;
-}
-.colorNav{
-    background: rgb(87, 127, 156);
-}
-.nav-item:hover{
-    background: black;
-    color:white;
-}
-.nav-link:hover{
-    color:white;
-}
-.form-control, .btn{
-    background: rgb(46,75,95);
-    width:80%;
-    color:rgb(212, 206, 164);
-    border-radius: 1px;
-    border-color:rgb(212, 206, 164) ;
-}
-.align-items-start{
-    margin-top: -200px;
-}
-.text-left{
-    padding-right: 3%;
-    margin-top: 2%;
-}
-.text-center{
-    margin-top: 2%;
-}
-.btn{
-    margin-top: 4px;
-}
-.btn:hover{
-    background:rgb(181, 220, 241);
-}
-.alert{
-    visibility: hidden;
-    background: rgb(46,75,95);
-    color:red;
-    font-weight: bold;
-    margin-top: 15%;
-    margin-right: 10%;
-    border: solid 2px rgb(212, 206, 164);
-}
-.textAlert{
-    display: block;
-    text-align: center;
-    margin-top: -5%;
-    font-weight: bold;
-}
-.betweenAlert{
-    color:black;
-    background: rgb(181, 220, 241);
-}
-.btnAlert{
-    text-align: center;
-    margin-bottom: 2%;
-    margin-left: 40%;
-    background: rgb(46,75,95);
-    color: rgb(212, 206, 164);
-}
-.btnAlert:hover{
-    background: rgb(181, 220, 241);
-    color: black;
+.footer-margin{
+  margin-top: 10%;
 }

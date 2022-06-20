@@ -4,53 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../tools/bootstrap.min.css" rel="stylesheet">
-    <link href="../styles/styleContact.css" rel="stylesheet"/>
+    <link href="../../tools/bootstrap.min.css" rel="stylesheet"> <!--Version 5.1-->
+    <link href="../../styles/styleContact.css" rel="stylesheet">
+    <script src="../tools/bootstrap.bundle.min.js" defer></script>
     <script src="../scriptJS/contact.js" defer></script>
     <title>Contact</title>
 </head>
 <body onload="focusOnFirstInput()">
-    <header>
-        <h1 class="colorWhite">sabineperonczyk.com</h1>
-            <p class="colorWhite">Artiste Photographe amateur</p>
-                <div class="container-fluid">
-                    <nav class="colorNav">
-                        <ul class="nav">
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link" href="../../sabineperonczyk/index.html"> ACCUEIL</a>
-                            </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link" href="../pages/pilot_pages/bio.html">BIO</a>
-                            </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link disabled" href="#">PHOTOGRAPHIES</a>
-                            </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link disabled" href="#">NATURE</a>
-                            </li>
-                            <li class="nav-itembtn-sm">
-                                <a class="nav-link disabled" href="#">URBAIN</a>
-                            </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link disabled" href="#">PHOTOGRAPHISMES</a>
-                            </li>         
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link disabled" href="#">FIGURATIF</a>
-                                </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link disabled" href="#">ABSTRAIT</a>
-                            </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
-                            </li>
-                            <li class="nav-item btn-sm">
-                                <a class="nav-link" href="#">EVENEMENTS</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-    </header>
-    <!--Creation of the contact form-->
+  <header>
+    <h1 class="colorWhite">sabineperonczyk.com</h1>
+        <p class="colorWhite">Artiste Photographe amateur</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand brandColor" href="../index.html">LOGO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="textColor" aria-current="page" href="../index.html">ACCUEIL</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PHOTOGRAPHIES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../pages/pilot_pages/nature.html">NATURE</a></li>
+                      <li><a class="dropdown-item" href="#">URBAIN</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PHOTOGRAPHISMES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">FIGURATIF,ABSTRAIT</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id=bioColor href="../pages/pilot_pages/bio.html">BIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contactColor" href="../pages/contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+</header>   <!--Creation of the contact form-->
     <div class="container-fluid">
         <div class="row justify-content-end">
             <div class="col-6">
@@ -65,7 +67,7 @@
                 <form method ="post" action="">
                         <div class="form-group">
                             <label for="text">Nom</label>
-                            <input class="form-control" type="text" id="nom" name="nom" placeholder="votre nom ici" required>
+                            <input class="form-control" type="text" id="nom" name="name" placeholder="votre nom ici" required>
                         </div>
                         <div class="form-group">
                             <label for="mail">Mail</label>
@@ -80,21 +82,48 @@
                             <textarea class="form-control" type="text" id="comments" name="commentaires" rows="7" cols="30" placeholder="vos remarques" required></textarea>
                         </div>
                         <div class="form-group">
-                            <!-- how to insert a random code to valide form-->
+                            <!-- how to insert a random code to valide form, no activate for the moment-->
                             <input class="form-control" type="text" id="validate" name="valider" placeholder="entrez code de vérification"> 
 
                             <button class="btn" id="subBtn" type="submit" onclick="isEmpty()">envoyer votre message</button>  
                             <button class="btn" id="clearBtn" type="reset">Effacer les champs</button>
                         </div>
-                    </div>
+            </div>
             </form>
-            <div class="alert" id="errorModal">
+            <!--ancienne modale créée par mes soins-->
+            <!--<div class="alert" id="errorModal">
                 <h4 class="textAlert">!!Alerte!!</h4>
                 <div class="betweenAlert">
                     <p>!! Il faut remplir tout les champs !!</p>
                     <button class="btnAlert" type="button" onclick="annulModalAlert()">Close</button>
                 </div>
-            </div>
+            </div>-->
+
+            <!--modale créee avec infos online-->
+
+            <button type="button" data-bs-toggle="modal" data-bs-target="#infos" class="btn btn-primary">afficher modal</button>
+                <div class="modal" id="infos">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">!! Attention !!</h4>
+                            </div>
+                            <div class="modal-body">
+                                Attention, il faut remplir tous les champs !
+                            </div>
+                            <div class="modal-footer">
+                                <em>Informations sous réserve</em>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
+    <footer class="footer-margin">
+        <p>
+            © Sabine PERONCZYK - Conditions générales
+        </p>
+    </footer>   
 </body>
 </html>
