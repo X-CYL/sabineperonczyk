@@ -77,9 +77,9 @@ h2 {
   padding-right: 3%;
   margin-top: 2%;
 }
-.text-center {
+/*.text-center {
   margin-top: 2%;
-}
+}*/
 .btn {
   margin-top: 4px;
 }
@@ -88,14 +88,30 @@ h2 {
 }
 /* create CSS for modal sheet */
 
-#infos{
+/*#infos{
     position:absolute;
-    width: 50%;
-    height: 50%;
-}
+}*/
 .footer-margin{
   margin-top: 10%;
 }
 .formClass{
   margin-left: 3%;
+}
+.sizeText{
+  font-size: 0.8em;
+}
+/*error modal style */
+
+.textCenter{
+  text-align: center;
+}
+.modal-content{
+  background:rgb(153, 198, 230);
+  border-color: red;
+}
+.modal-header{
+  display:inline-block;
+}
+.modal-footer{
+  display:inline-block;
 }
