@@ -1,19 +1,29 @@
-//place le curseur dans le premier champ de formulaire
-function focusOnFirstInput(){
-    document.getElementById('nom').focus();
+let myModal = new bootstrap.Modal(document.getElementById("infos"), {
+  //recover the modale into myModal variable
+  keybord: true,
+});
+
+// function who will opening the modale
+function showModal() { 
+  myModal.show();
 }
 
-//vérifie que tous les champs sont bien remplis avant le submit
-function isEmpty(){
-let controlInput = document.getElementsByTagName('input');
-    for(let i = 0; i < controlInput.length; i++){
-        if (document.getElementsByTagName(controlInput[i]).value == "");
-            modalAlert();
+//put the focus at the "input" name when the page is charged
+document.body.addEventListener("load", focusOnFirstInput());
+function focusOnFirstInput() {
+  document.getElementById("nom").focus();
+}
+
+//check the inputs to see they are isn't empty
+let submitButton = document.getElementById("subBtn");
+submitButton.addEventListener("click", isEmpty);
+
+function isEmpty(form) {
+  let controlInput = document.getElementsByTagName("input");
+  for (let i = 0; i < controlInput.length; i++) {
+    if (controlInput[i].value === "") {
+      console.dir(controlInput[i]);
+      showModal();
     }
-}
-function modalAlert(){
-    let alert = document.getElementById('infos').style.visibility ="visible";
-}
-function annulModalAlert(){
-    let alert = document.getElementById('infos').style.visibility= "hidden";
+  }
 }
