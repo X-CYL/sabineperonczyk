@@ -22,7 +22,6 @@ function isEmpty(form) {
   let controlInput = document.getElementsByTagName("input");
   for (let i = 0; i < controlInput.length; i++) {
     if (controlInput[i].value === "") {
-      console.dir(controlInput[i]);
       showModal();
     }
   }
