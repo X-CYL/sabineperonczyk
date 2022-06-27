@@ -70,25 +70,30 @@
               <h3 class="formClass">Contact</h3>
                 <form method ="post" action="" class="formClass" name="formulaire">
                         <div class="form-group">
-                            <label for="text">Nom Prénom*</label>
-                            <input class="form-control" type="text" id="nom" name="nom" placeholder="votre nom ici" required>
+                            <label for="text">Nom*</label>
+                            <input class="form-control" type="text" id="nom" name="nom" placeholder="votre nom ici">
                         </div>
+                        <div class="form-group">
+                          <label for="text">Prénom*</label>
+                          <input class="form-control" type="text" id="prenom" name="prenom" placeholder="votre prenom ici">
+                      </div>
                         <div class="form-group">
                             <label for="mail">Mail*</label>
-                            <input class="form-control" type="email" id="mail" name="mail" placeholder="adresse@mail.xxx" required>
+                            <input class="form-control" type="email" id="mail" name="mail" placeholder="adresse@mail.xxx">
                         </div>
                         <div class="form-group">
-                            <label for="sujet">Sujet*</label>
-                            <input class="form-control" type="text" id="sujet" name="sujet" placeholder="sujet" required>
+                            <label for="sujet">Sujet* </label>
+                            <input class="form-control" type="text" id="sujet" name="sujet" placeholder="sujet">
                         </div>
                         <div class="form-group">
-                            <label for="comments">Commentaire</label>
-                            <textarea class="form-control" type="text" id="comments" name="commentaires" rows="7" cols="30" placeholder="vos remarques" required></textarea>
+                            <label for="comments">Commentaire*</label>
+                            <span id="count" class="fs-6 text compteur">120</span> 
+                            <span class="compteurText" id="caracteres">Caractères restants</span>                          
+                            <textarea class="form-control" type="text" id="comments" name="commentaires" rows="7" cols="30"placeholder="vos remarques, 120 caractères max." maxlength="120"></textarea>   
                         </div>
                         <div class="form-group">
                             <!-- how to insert a random code to valide form, no activate for the moment-->
                             <!--<input class="form-control" type="text" id="validate" name="valider" placeholder="entrez code de vérification"> -->
-
                             <button class="btn" id="subBtn" type="submit">envoyer votre message</button>  
                             <button class="btn" id="clearBtn" type="reset">Effacer les champs</button>
                         </div>

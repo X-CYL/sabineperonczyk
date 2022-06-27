@@ -95,7 +95,7 @@ h2 {
   margin-top: 10%;
 }
 .formClass{
-  margin-left: 3%;
+  margin-left: 2%;
 }
 .sizeText{
   font-size: 0.8em;
@@ -114,4 +114,19 @@ h2 {
 }
 .modal-footer{
   display:inline-block;
+}
+.compteur{
+  
+  color: rgb(212, 206, 164);
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
+}
+.compteurText{
+  
+  color: rgb(212, 206, 164);
+  font-size: 0.6em;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 5px;
 }
