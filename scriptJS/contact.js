@@ -43,3 +43,9 @@ saisie.addEventListener('input', event =>{
 
 
 
+//verify if email input is true
+
+
+
+
+

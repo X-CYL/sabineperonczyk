@@ -116,14 +116,14 @@ h2 {
   display:inline-block;
 }
 .compteur{
-  background: rgb(101, 130, 151);
+  
   color: rgb(212, 206, 164);
   padding-left: 1%;
   padding-right: 1%;
   border-radius: 5px;
 }
 .compteurText{
-  background: rgb(101, 130, 151);
+  
   color: rgb(212, 206, 164);
   font-size: 0.6em;
   padding-left: 1%;
