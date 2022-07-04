@@ -130,3 +130,7 @@ h2 {
   padding-right: 1%;
   border-radius: 5px;
 }
+.spanTextRed{
+  font-size: 0.8em;
+  color:red;
+}

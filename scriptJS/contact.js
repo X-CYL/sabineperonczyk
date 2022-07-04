@@ -3,11 +3,61 @@ let myModal = new bootstrap.Modal(document.getElementById("infos"), {
   keybord: true,
 });
 
+let errorMessages =[
+  'Il y a des caractères interdits dans votre nom',
+  'Il y a des caractères interdits dans votre prénom',
+  'Votre email doit contenir "@ et ."'
+]
 
-// function who will opening the modale
-function showModal() { 
-  myModal.show();
+//control the name format
+let theName = document.getElementById('nom');
+let errorNom = document.getElementById('nomSpanErrorText');
+function controlName(){
+  let nameControl = /^[A-zÀ-ú_\- ]+$/;
+  if (nameControl.exec(theName.value) == null){
+    errorNom.innerText = errorMessages[0]
+    return false;
+  }
+  else {
+    errorNom.innerText = "";
+    return true;
+  }
 }
+theName.addEventListener('change',controlName);
+
+//control the surname format
+let theSurName = document.getElementById('prenom');
+let errorPrenom = document.getElementById('prenomSpanErrorText');
+function controlSurName(){
+  let nameControl = /^[A-zÀ-ú_\- ]+$/;
+  if (nameControl.exec(theSurName.value) == null){
+    errorPrenom.innerText = errorMessages[1];
+    return false;
+  }
+  else {
+    errorPrenom.innerText = "";
+    return true;
+  }
+}
+theSurName.addEventListener('change',controlSurName);
+
+
+//control the mail format with @ and .
+let mail = document.getElementById('mail');
+let errorMail = document.getElementById('mailSpanErrorText');
+function controlMail(){
+  let verifMail = /^[a-zA-Z0-9_\-]+@[a-zA-Z0-9]{2,}[.][a-zA-Z]{3,4}$/
+  if (verifMail.exec(mail.value)== null){
+    errorMail.innerText = errorMessages[2];
+      return false;
+  }
+  else {
+    errorMail.innerText = "";
+    return true;
+  }
+}
+mail.addEventListener('change', controlMail)
+
 
 //put the focus at the "input" name when the page is charged
 document.body.addEventListener("load", focusOnFirstInput());
@@ -15,10 +65,15 @@ function focusOnFirstInput() {
   document.getElementById("nom").focus();
 }
 
+// function who will opening the modale
+function showModal() { 
+  myModal.show();
+}
+
+
 //check the inputs to see they are isn't empty
 let submitButton = document.getElementById("subBtn");
 submitButton.addEventListener("click", isEmpty);
-
 function isEmpty(form) {
   let controlInput = document.getElementsByTagName("input");
   for (let i = 0; i < controlInput.length; i++) {
@@ -42,7 +97,7 @@ saisie.addEventListener('input', event =>{
 
 
 
-//verify if email input is true
+
 
 
 
